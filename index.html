@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+</head>
+<body>
+
+<h1>Hangman</h1>
+
+<div id = "categoryTitle">Choose a Category:</div>
+
+<select id="category">
+    <option value="fruit">fruit</option>
+    <option value="animals">animals</option>
+    <option value="science">science</option>
+    <option value="holidays">holidays</option>
+    <option value="school">school</option>
+</select>
+
+<button id="start game" onclick="startGame()">Start Game</button>
+
+<div id = "guessTitle">Guess:</div>
+
+<select id="guess">
+<!--options added by resetGuessesSelect function-->
+</select>
+
+<button id="guessLetter" onclick="printWord()">Guess Letter</button>
+
+<div id="output"></div>
+<div id="output2"></div>
+
+<div id = "guessedLettersTitle">Guessed Letters:</div>
+<div id="output3"></div>
+
+<div id = "guessesRemainingTitle">Guesses Remaining:</div>
+<div id="output4"></div>
+
+<div id = "toStartNewGame">To start a new game: pick a category and click Start Game</div>
+
+</body>
+</html>
